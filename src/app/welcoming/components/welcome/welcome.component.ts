@@ -9,6 +9,6 @@ export class WelcomeComponent {
   @Input() firstName!: string;
   @Input() lastName!: string;
   get fullName():string{
-    return `${this.firstName} ${this.lastName}`;
+    return this.firstName=='' || this.lastName=='' ? 'Unknowm' : `${this.firstName} ${this.lastName}`;
   }
 }
