@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RegisterDeveloperComponent } from './welcoming/components/register-developer/register-developer.component';
 import { WelcomeComponent } from './welcoming/components/welcome/welcome.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { WelcomeComponent } from './welcoming/components/welcome/welcome.compone
     WelcomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
